@@ -30,11 +30,11 @@ This folder contains the necessary program files to create airflow pipelines to 
 
 A music streaming company, Sparkify, has decided that it is time to introduce more automation and monitoring to their data warehouse ETL pipelines and come to the conclusion that the best tool to achieve this is Apache Airflow.
 
- This projects aims to build a high grade data pipelines that are dynamic and built from reusable tasks, can be monitored, and allow easy backfills.Since data quality plays a big part when analyses are executed on top the data warehouse and data qaulity checks are included in the pipeline that run tests against the loaded datasets after the ETL steps have been executed.
+ This projects aims to build a high grade data pipelines that are dynamic and built from reusable tasks, can be monitored, and allow easy backfills.Since data quality plays a big part when analyses are executed on top the data warehouse and data quality checks are included in the pipeline that run tests against the loaded datasets after the ETL steps have been executed.
 
 The source data resides in S3 and needs to be processed in Sparkify's data warehouse in Amazon Redshift. The source datasets consist of JSON logs that tell about user activity in the application and JSON metadata about the songs the users listen to.Since the analytics team is interested in knowing what songs the users are listening to and probably interested in performing ranking ,aggregation to determine which song is played the most, what is most popular song, which artist released most popular songs. Analytics may also be interested in looking at the trends over a period of time.
 
-In order to support the required analytics a star schema design is implemented to design the data warehouse. Songplay table is the fact table and song, user,artist and time are dimension tables. Database integrity is maintained by using Primary key and foreign key constraints in the table definitions.
+In order to support the required analytics a star schema design is implemented to design the data warehouse. songplay table is the fact table and song, user,artist and time are dimension tables. Database integrity is maintained by using Primary key and foreign key constraints in the table definitions.
 
 Here is the ER diagram explaining the schema design.
 
